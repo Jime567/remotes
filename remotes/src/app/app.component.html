@@ -1,0 +1,59 @@
+<link href='https://fonts.googleapis.com/css?family=Plaster' rel='stylesheet'>
+<style>
+
+</style>
+<mat-toolbar>
+    <span class="headingTitle">Theater Remotes</span>
+    <span class="space"></span>
+    <button mat-icon-button class="buttonIcon" aria-label="Example icon-button with menu icon">
+      <img src="assets/PhelpsLogo.png" alt="Phelps Logo" height="40" width="40">
+    </button>
+  </mat-toolbar>
+  
+  <mat-tab-group class="tabs">
+    <mat-tab> 
+      <ng-template mat-tab-label>
+        <span>Onkyo</span>
+      </ng-template>
+
+      <div class="contents">
+        <app-onkyo></app-onkyo>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Projector"> 
+      <ng-template mat-tab-label>
+        <span>Projector</span>
+      </ng-template> 
+      
+      <div class="contents">
+        <app-projector></app-projector>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Screen"> 
+      <ng-template mat-tab-label>
+        <span>Screen</span>
+      </ng-template> 
+
+      <div class="contents">
+        <app-screen></app-screen>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Hearth"> 
+      <ng-template mat-tab-label>
+        <span>Hearth</span>
+      </ng-template>
+
+      <div class="buttons">
+        <button ></button>
+      </div>
+     </mat-tab>
+
+  </mat-tab-group>
+
+
+  
+
+

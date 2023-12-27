@@ -1,0 +1,12 @@
+<div class="buttons">
+    <div class ="button-row">
+        <mat-icon class="icons" (click)="onClickIcon(); screenUp()" [@iconSizeChange]="iconState" fontIcon="arrow_upward"></mat-icon>
+    </div>
+    <div class="button-row">
+        <mat-icon class="icons" (click)="onClickIcon1(); screenStop()" [@iconSizeChange]="icon1State" fontIcon="stop_circle"></mat-icon>
+    </div>
+    <div class="button-row">
+        <mat-icon class="icons" (click)="onClickIcon2(); screenDown()" [@iconSizeChange]="icon2State" fontIcon="arrow_downward"></mat-icon>
+    </div>
+   
+  </div>
