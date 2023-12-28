@@ -212,7 +212,7 @@ export class OnkyoComponent {
   }
 
   onkyoCD(): void {
-    const url = 'http://192.168.86.33:81/onkyoGame';
+    const url = 'http://192.168.86.33:81/onkyoCD';
     this.httpClient.get(url).subscribe(
       (data) => {
         console.log('Response:', data);
