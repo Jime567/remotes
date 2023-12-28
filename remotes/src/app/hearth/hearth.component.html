@@ -1,27 +1,18 @@
 <div class="buttons">
     <div class ="button-row">
-        <mat-icon class="icons" (click)="onClickIcon(); onkyoOnOff()" [@iconSizeChange]="iconState" fontIcon="power_settings_new"></mat-icon>
-        <button class="srcButton" (click)="onkyoSTRMBOX()">Xfinity</button>
-        <button class="srcButton" (click)="onkyoDVD()">DVD</button>
+        <mat-icon class="icons" (click)="onClickIcon(); fireplaceA()" [@iconSizeChange]="iconState" fontIcon="highlight"> </mat-icon>
+        <mat-icon class="icons" (click)="onClickIcon1(); fireplaceB()" [@iconSizeChange]="icon1State" fontIcon="tungsten"></mat-icon>
     </div>
-    <div class="button-row">
-        <mat-icon class="icons" (click)="onClickIcon1(); onkyoUp()" [@iconSizeChange]="icon1State" fontIcon="volume_up"></mat-icon>
-        <button class="srcButton" (click)="onkyoPC()" >PC</button>
-        <button class="srcButton" (click)="onkyoBluetooth()">Bluetooth</button>
+    <div class ="button-row">
+        <mat-icon class="icons" (click)="onClickIcon2(); fireplaceDimmer()" [@iconSizeChange]="icon2State" fontIcon="brightness_6"></mat-icon>
     </div>
-    <div class="button-row">
-        <mat-icon class="icons" (click)="onClickIcon2(); onkyoDown()" [@iconSizeChange]="icon2State" fontIcon="volume_down"></mat-icon>
-        <button class="srcButton" (click)="onkyoAux()">Aux</button>
-        <button class="srcButton" (click)="onkyoCBL()">CBL/SAT</button>
-
+    <div class ="button-row">
+        <mat-icon class="icons" (click)="onClickIcon3(); fireplaceHeat()" [@iconSizeChange]="icon3State" fontIcon="microwave"></mat-icon>
+        <mat-icon class="icons" (click)="onClickIcon4(); fireplaceOn()" [@iconSizeChange]="icon4State" fontIcon="settings_power"></mat-icon>
+        <mat-icon class="icons" (click)="onClickIcon5(); fireplaceSpeed()" [@iconSizeChange]="icon5State" fontIcon="slow_motion_video"></mat-icon>
+    </div>   
+    <div class ="button-row">
+        <mat-icon class="icons" (click)="onClickIcon6(); fireplaceTimer()" [@iconSizeChange]="icon6State" fontIcon="timer"></mat-icon>
     </div>
-    <div class="button-row">
-        <button class="srcButton" (click)="onkyoGame()">Game</button>
-        <button class="srcButton" (click)="onkyoNet()" >Net</button>
-        <button class="srcButton" (click)="onkyoCD()" >CD</button>
-
-    </div>
-    <div class="button-row">
-
-    </div>
+    
   </div>

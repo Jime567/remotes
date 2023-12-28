@@ -1,0 +1,16 @@
+{
+  "name": "Theater Remotes",
+  "short_name": "Theater Remotes",
+  "description": "Remotes for the Theater Room",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#470303",
+  "icons": [
+    {
+      "src": "assets/smallLogo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

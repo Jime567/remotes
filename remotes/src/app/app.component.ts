@@ -10,6 +10,8 @@ import { trigger, style, animate, transition } from '@angular/animations';
 import { OnkyoComponent } from './onkyo/onkyo.component';
 import { ProjectorComponent } from './projector/projector.component';
 import { ScreenComponent } from './screen/screen.component';
+import { HearthComponent } from './hearth/hearth.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 import * as https from 'https';
 @Component({
   selector: 'app-root',
@@ -23,7 +25,8 @@ import * as https from 'https';
     HttpClientModule,
     OnkyoComponent,
     ProjectorComponent,
-    ScreenComponent
+    ScreenComponent,
+    HearthComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
