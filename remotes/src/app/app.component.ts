@@ -11,6 +11,7 @@ import { OnkyoComponent } from './onkyo/onkyo.component';
 import { ProjectorComponent } from './projector/projector.component';
 import { ScreenComponent } from './screen/screen.component';
 import { HearthComponent } from './hearth/hearth.component';
+import { MatTabGroupGestureModule } from 'mat-tab-group-gesture';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import * as https from 'https';
 @Component({
@@ -27,7 +28,9 @@ import * as https from 'https';
     ProjectorComponent,
     ScreenComponent,
     HearthComponent,
-  ],
+    ServiceWorkerModule,
+    MatTabGroupGestureModule
+    ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   

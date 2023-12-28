@@ -23,6 +23,17 @@ export class OnkyoComponent {
   iconState : number = 0;
   icon1State : number = 0;
   icon2State : number = 0;
+  icon3State : number = 0;
+  icon4State : number = 0;
+  icon5State : number = 0;
+  icon6State : number = 0;
+  icon7State : number = 0;
+  icon8State : number = 0;
+  icon9State : number = 0;
+  icon10State : number = 0;
+  icon11State : number = 0;
+  icon12State : number = 0;
+
   constructor(private httpClient: HttpClient) {}
 
   onClickIcon() {
@@ -36,6 +47,37 @@ export class OnkyoComponent {
   onClickIcon2() {
     this.icon2State++;
   }
+  onClickIcon3() {
+    this.icon3State++;
+  }
+  onClickIcon4() {
+    this.icon4State++;
+  }
+  onClickIcon5() {
+    this.icon5State++;
+  }
+  onClickIcon6() {
+    this.icon6State++;
+  }
+  onClickIcon7() {
+    this.icon7State++;
+  }
+  onClickIcon8() {
+    this.icon8State++;
+  }
+  onClickIcon9() {
+    this.icon9State++;
+  }
+  onClickIcon10() {
+    this.icon10State++;
+  }
+  onClickIcon11() {
+    this.icon11State++;
+  }
+  onClickIcon12() {
+    this.icon12State++;
+  }
+
 
   onkyoOnOff(): void {
     const url = 'http://192.168.86.33:81/onkyoOn';
@@ -180,4 +222,128 @@ export class OnkyoComponent {
       }
     );
   }
+
+  onkyoQuick(): void {
+    const url = 'http://192.168.86.33:81/onkyoQuick';
+    this.httpClient.get(url).subscribe(
+      (data) => {
+        console.log('Response:', data);
+      },
+      (error) => {
+        console.error('Error:', error);
+      }
+    );
+  }
+
+  onkyoUpArrow(): void {
+    const url = 'http://192.168.86.33:81/onkyoUpArrow';
+    this.httpClient.get(url).subscribe(
+      (data) => {
+        console.log('Response:', data);
+      },
+      (error) => {
+        console.error('Error:', error);
+      }
+    );
+  }
+
+  onkyoInfo(): void {
+    const url = 'http://192.168.86.33:81/onkyoInfo';
+    this.httpClient.get(url).subscribe(
+      (data) => {
+        console.log('Response:', data);
+      },
+      (error) => {
+        console.error('Error:', error);
+      }
+    );
+  }
+
+  onkyoLeft(): void {
+    const url = 'http://192.168.86.33:81/onkyoLeft';
+    this.httpClient.get(url).subscribe(
+      (data) => {
+        console.log('Response:', data);
+      },
+      (error) => {
+        console.error('Error:', error);
+      }
+    );
+  }
+
+  onkyoEnter(): void {
+    const url = 'http://192.168.86.33:81/onkyoEnter';
+    this.httpClient.get(url).subscribe(
+      (data) => {
+        console.log('Response:', data);
+      },
+      (error) => {
+        console.error('Error:', error);
+      }
+    );
+  }
+  
+  onkyoRight(): void {
+    const url = 'http://192.168.86.33:81/onkyoRight';
+    this.httpClient.get(url).subscribe(
+      (data) => {
+        console.log('Response:', data);
+      },
+      (error) => {
+        console.error('Error:', error);
+      }
+    );
+  }
+
+  onkyoSettings(): void {
+    const url = 'http://192.168.86.33:81/onkyoSettings';
+    this.httpClient.get(url).subscribe(
+      (data) => {
+        console.log('Response:', data);
+      },
+      (error) => {
+        console.error('Error:', error);
+      }
+    );
+  }
+  
+  onkyoDownArrow(): void {
+    const url = 'http://192.168.86.33:81/onkyoDownArrow';
+    this.httpClient.get(url).subscribe(
+      (data) => {
+        console.log('Response:', data);
+      },
+      (error) => {
+        console.error('Error:', error);
+      }
+    );
+  }
+  
+  onkyoBack(): void {
+    const url = 'http://192.168.86.33:81/onkyoBack';
+    this.httpClient.get(url).subscribe(
+      (data) => {
+        console.log('Response:', data);
+      },
+      (error) => {
+        console.error('Error:', error);
+      }
+    );
+  }
+
+  onkyoMute(): void {
+    const url = 'http://192.168.86.33:81/onkyoMute';
+    this.httpClient.get(url).subscribe(
+      (data) => {
+        console.log('Response:', data);
+      },
+      (error) => {
+        console.error('Error:', error);
+      }
+    );
+  }
+
 }
+
+
+

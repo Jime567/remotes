@@ -10,7 +10,7 @@
     </button>
   </mat-toolbar>
   
-  <mat-tab-group class="tabs">
+  <mat-tab-group matTabGroupGesture [swipeLimitWidth]="80" [connectEdges]="true" class="tabs">
     <mat-tab> 
       <ng-template mat-tab-label>
         <span>Onkyo</span>

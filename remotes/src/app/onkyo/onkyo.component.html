@@ -19,9 +19,29 @@
         <button class="srcButton" (click)="onkyoGame()">Game</button>
         <button class="srcButton" (click)="onkyoNet()" >Net</button>
         <button class="srcButton" (click)="onkyoCD()" >CD</button>
+    </div>
+    <div class ="button-row">
+        <mat-icon class="icons" fontIcon="horizontal_rule"></mat-icon>
+        <mat-icon class="icons" (click)="onClickIcon3(); onkyoMute()" [@iconSizeChange]="icon3State" fontIcon="volume_off"></mat-icon>
+        <mat-icon class="icons"fontIcon="horizontal_rule" ></mat-icon>
+    </div>
+
+    <div class="button-row">
+        <mat-icon class="smallIcons" (click)="onClickIcon4(); onkyoQuick()" [@iconSizeChange]="icon4State" fontIcon="menu_open"></mat-icon>
+        <mat-icon class="icons" (click)="onClickIcon5(); onkyoUpArrow()" [@iconSizeChange]="icon5State" fontIcon="arrow_upward"></mat-icon>
+        <mat-icon class="smallIcons" (click)="onClickIcon6(); onkyoInfo()" [@iconSizeChange]="icon6State" fontIcon="info"></mat-icon>
 
     </div>
     <div class="button-row">
+        <mat-icon class="icons" (click)="onClickIcon7(); onkyoLeft()" [@iconSizeChange]="icon7State" fontIcon="arrow_back"></mat-icon>
+        <mat-icon class="icons" (click)="onClickIcon8(); onkyoEnter()" [@iconSizeChange]="icon8State" fontIcon="check"></mat-icon>
+        <mat-icon class="icons" (click)="onClickIcon9(); onkyoRight()" [@iconSizeChange]="icon9State" fontIcon="arrow_forward"></mat-icon>
+
+    </div>
+    <div class="button-row">
+        <mat-icon class="smallIcons" (click)="onClickIcon10(); onkyoSettings()" [@iconSizeChange]="icon10State" fontIcon="settings"></mat-icon>
+        <mat-icon class="icons" (click)="onClickIcon11(); onkyoDownArrow()" [@iconSizeChange]="icon11State" fontIcon="arrow_downward"></mat-icon>
+        <mat-icon class="smallIcons" (click)="onClickIcon12(); onkyoBack()" [@iconSizeChange]="icon12State" fontIcon="keyboard_return"></mat-icon>
 
     </div>
   </div>
