@@ -29,7 +29,6 @@ import * as https from 'https';
     ScreenComponent,
     HearthComponent,
     ServiceWorkerModule,
-    MatTabGroupGestureModule
     ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
