@@ -40,7 +40,7 @@ export class ScreenComponent {
   }
 
   screenUp(): void {
-    const url = 'http://192.168.86.33:81/screenUp';
+    const url = 'http://192.168.86.42:81/screenUp';
     this.httpClient.get(url).subscribe(
       (data) => {
         console.log('Response:', data);
@@ -52,7 +52,7 @@ export class ScreenComponent {
   }
 
   screenDown(): void {
-    const url = 'http://192.168.86.33:81/screenDown';
+    const url = 'http://192.168.86.42:81/screenDown';
     this.httpClient.get(url).subscribe(
       (data) => {
         console.log('Response:', data);
@@ -64,7 +64,7 @@ export class ScreenComponent {
   }
 
   screenStop(): void {
-    const url = 'http://192.168.86.33:81/screenStop';
+    const url = 'http://192.168.86.42:81/screenStop';
     this.httpClient.get(url).subscribe(
       (data) => {
         console.log('Response:', data);
