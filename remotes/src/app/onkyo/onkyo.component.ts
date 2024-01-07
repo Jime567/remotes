@@ -4,6 +4,13 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon'; 
 
+//variable to restrict volume up presses
+let volumeCounter: number = 0;
+
+const intervalId = setInterval(() => {
+  volumeCounter = 0;
+}, 2000);
+
 @Component({
   selector: 'app-onkyo',
   standalone: true,
@@ -117,14 +124,19 @@ export class OnkyoComponent {
 
   onkyoUp(): void {
     const url = 'http://192.168.86.33:81/onkyoUp';
-    this.httpClient.get(url).subscribe(
-      (data) => {
-        console.log('Response:', data);
-      },
-      (error) => {
-        console.error('Error:', error);
-      }
-    );
+    console.log('volumeCounter:', volumeCounter);
+    if (volumeCounter < 3) {
+      console.log("Volume Up");
+      this.httpClient.get(url).subscribe(
+        (data) => {
+          console.log('Response:', data);
+        },
+        (error) => {
+          console.error('Error:', error);
+        }
+      );
+      volumeCounter++;
+    }
   }
 
   onkyoPC(): void {
